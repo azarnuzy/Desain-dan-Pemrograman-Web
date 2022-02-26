@@ -39,10 +39,18 @@ body {
   font-weight: bold;
   cursor: pointer;
   padding: 20px 10px;
+  display: inline-block;
+}
+
+.navbar li:hover {
+  background-color: #00B4D8;
 }
 
 .main-content {
   margin: 40px 0;
+  width: 70%;
+  float: left;
+  margin-right: 20px;
 }
 
 .main-content .content, .sidebar .profile {
@@ -53,4 +61,5 @@ body {
 
 .sidebar {
   margin-top: 40px;
+  display: inline-block;
 }
