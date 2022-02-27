@@ -8,6 +8,10 @@ body {
   height: 1000px;
 }
 
+.main .container{
+  background:center url(../img/logo_upi.png) no-repeat;
+}
+
 .container {
   max-width: 500px;
   margin: 50vh auto 0 auto;
@@ -32,6 +36,8 @@ body {
 .share {
   width: 60px;
   text-align: center;
+  position: fixed;
+  top: 40%;
 }
 
 .share .title {
