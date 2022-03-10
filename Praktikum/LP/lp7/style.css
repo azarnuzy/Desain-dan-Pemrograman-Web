@@ -1,0 +1,26 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  height: 100vh;
+}
+
+.container {
+  height: 100%;
+}
+
+.logo,
+header,
+nav,
+.content-1,
+.content-2,
+aside,
+footer {
+  background-color: #FF9F45;
+  color: #fff;
+  padding: 20px;
+  border: 1px solid #fff;
+}

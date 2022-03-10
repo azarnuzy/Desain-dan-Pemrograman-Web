@@ -1,0 +1,20 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  height: 0;
+}
+
+.container {
+  width: 1000px;
+  height: 800px;
+  margin: 40px auto;
+}
+
+.item {
+  background-color: #00B4D8;
+  padding: 20px;
+  color: #fff
+}
