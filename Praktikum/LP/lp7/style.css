@@ -8,8 +8,46 @@ body {
   height: 100vh;
 }
 
+.logo {
+  grid-area: logo;
+}
+
+header {
+  grid-area: header;
+}
+
+nav {
+  grid-area: navbar;
+}
+
+.content-1 {
+  grid-area: content-1;
+}
+
+.content-2 {
+  grid-area: content-2;
+}
+
+aside {
+  grid-area: sidebar;
+}
+
+footer {
+  grid-area: footer;
+}
+
 .container {
   height: 100%;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 150px 700px 300px;
+  grid-template-rows: 100px 50px 300px 300px 50px;
+  grid-template-areas: 
+  "logo header header"
+  "navbar navbar navbar"
+  "content-1 content-1 sidebar"
+  "content-2 content-2 sidebar"
+  "footer footer footer";
 }
 
 .logo,
