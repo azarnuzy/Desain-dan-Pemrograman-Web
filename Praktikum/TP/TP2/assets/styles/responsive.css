@@ -1,0 +1,129 @@
+@media screen and (min-width: 1280px) {
+    body {
+        width: 1280px;
+        margin: 50px auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .menu {
+      perspective: 800px;
+    }
+  
+    .humberger-menu {
+      font-size: 1em;
+    }
+  
+    .menu a {
+      font-size: 1em;
+    }
+  
+    .humberger-menu {
+      display: block;
+      margin-bottom: 10px;
+    }
+  
+    .menu ul {
+      max-height: 0;
+      overflow: hidden;
+      transform: rotateX(90deg);
+      transition: all 0.5s;
+    }
+  
+    [aria-expanded="true"] ~ ul {
+      display: grid;
+      max-height: 500px;
+      transform: rotateX(0);
+    }
+  
+    [aria-expanded="false"] .close {
+      display: none;
+    }
+  
+    [aria-expanded="true"] .close {
+      display: inline-block;
+    }
+  
+    [aria-expanded="true"] .open {
+      display: none;
+    }
+
+    .social-media {
+        justify-content: space-around;
+    }
+  }
+  
+  @media screen and (max-width: 800px) {
+      .jumbotron {
+          grid-template-columns: 1fr 1fr;
+      }
+
+      .jumbotron__hero {
+          grid-column: 1/3;
+      }
+
+      .jumbotron__hero h3 {
+          font-size: 24px;
+      }
+
+      .jumbotron__hero p {
+          font-size: 16px;
+      }
+
+      .jumbotron__price {
+          padding: 20px 0;
+      }
+
+      .jumbotron__price p {
+          font-size: 18px;
+      }
+
+      .price-title {
+          font-size: 30px;
+      }
+
+      .feature {
+          grid-template-columns: 1fr 1fr;
+      }
+
+      .feature__item p{
+          font-size: 15px;
+      }
+
+      .social-media__title::after {
+        left: 65%;
+      }
+
+      .social-media__title::before {
+        right: 65%;
+      }
+
+      .social-media {
+          justify-content: space-around;
+      }
+  }
+
+  @media (max-width: 700px) {
+    .menu ul {
+      grid-template-columns: 1fr;
+    }
+  }
+
+  @media screen and (max-width: 400px) {
+    .main {
+        grid-template-columns: 1fr;
+    }
+
+    .main__content-img {
+        display: flex;
+        justify-content: center;
+    }
+
+    .social-media__title::after {
+        left: 75%;
+      }
+
+      .social-media__title::before {
+        right: 75%;
+      }
+  }
