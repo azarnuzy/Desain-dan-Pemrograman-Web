@@ -1,0 +1,121 @@
+:root{
+
+    /*===== Font weight =====*/
+    --font-medium: 500;
+    --font-semi-bold: 600;
+    --font-bold: 700;
+    
+    /*===== Colors =====*/
+    --first-color: #232F3E;
+    --first-color-dark: #131921;
+    --text-color: #0F1111;
+    --text-color-second: #c14521;
+    --first-color-light: #EAE7E6;
+    --first-color-lighten: #FFFAFA;
+    
+    /*===== Font and typography =====*/
+    --body-font: 'Poppins', sans-serif;
+    --h1-font-size: 1.5rem;
+    --h2-font-size: 1.25rem;
+    --h3-font-size: 1rem;
+    --normal-font-size: .938rem;
+    --small-font-size: .813rem;
+    --smaller-font-size: .75rem;
+    
+    /*===== Margenes =====*/
+    --mb-1: .5rem;
+    --mb-2: 1rem;
+    --mb-3: 1.5rem;
+    --mb-4: 2rem;
+    --mb-5: 2.5rem;
+    
+    /*===== z index =====*/
+    --z-fixed: 100;
+    
+  }
+
+@media screen and (min-width: 1280px) {
+    .container-header {
+        width: 1280px;
+        margin:auto;
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    .container-header {
+        width:100%;
+    }
+
+    .list-menu {
+        width: 100%;
+    }
+
+    .promotions {
+        width: 100%;
+    }
+
+    .amazon-app__container {
+        width: 100%;
+    }
+}
+
+@media screen and (max-width: 1000px) {
+    .list-menu {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .list-menu__item:nth-child(1) {
+        border-bottom: 1px solid #25252571;
+    }
+
+    .list-menu__item:nth-child(2) {
+        border-bottom: 1px solid #25252571;
+    }
+    
+    .list-menu__item:nth-child(3) {
+        border-bottom: 1px solid #25252571;
+    }
+
+    .promotions {
+        grid-template-columns: 1fr;
+    }
+
+    .promotions__deals {
+        text-align: center;
+        align-items: center;
+    }
+
+    .promotions__deals-container p {
+        font-size: 30px;
+    }
+
+    .promotions__deals-container h3 {
+        font-size: 40px;
+        margin-bottom: 10px;
+    }
+
+    .offer-button {
+        height: 60px;
+        width: 300px;
+        font-size: 23px;
+    }
+
+    .promotions__img {
+        margin-bottom: 130px;
+    }
+
+    .promotions__img img {
+        width: 120px;
+        height: 120px;
+        margin-bottom: 50px;
+    }
+
+    .promotions__product-container {
+        position: relative;
+        top: -110px;
+    }
+
+    .promotions__product-container img {
+        margin-bottom: 30px;
+    }
+}

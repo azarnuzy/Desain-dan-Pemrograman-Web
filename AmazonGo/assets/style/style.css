@@ -1,0 +1,401 @@
+/*===== GOOGLE FONTS =====*/
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap");
+@font-face {
+  font-family: "amazon-ember";
+  src: url("../font/Amazon_Typefaces_Complete_Font_Set_Mar2020/Ember/Amazon-Ember-Medium.ttf");
+}
+/*===== VARIABLES CSS =====*/
+:root{
+
+  /*===== Font weight =====*/
+  --font-medium: 500;
+  --font-semi-bold: 600;
+  --font-bold: 700;
+  
+  /*===== Colors =====*/
+  --first-color: #232F3E;
+  --first-color-dark: #131921;
+  --text-color: #0F1111;
+  --text-color-second: #c14521;
+  --first-color-light: #EAE7E6;
+  --first-color-lighten: #FFFAFA;
+  
+  /*===== Font and typography =====*/
+  --body-font:"amazon-ember", 'Poppins', sans-serif;
+  
+  /*===== Margenes =====*/
+  --mb-1: .5rem;
+  --mb-2: 1rem;
+  --mb-3: 1.5rem;
+  --mb-4: 2rem;
+  --mb-5: 2.5rem;
+  
+  /*===== z index =====*/
+  --z-fixed: 100;
+  
+}
+
+/*===== BASE =====*/
+*, ::before, ::after {
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  font-size: var(--normal-font-size);
+  font-weight: var(--font-medium);
+  background-color: var(--first-color-lighten);
+  color: var(--text-color);
+  line-height: 1.6;
+}
+
+a {
+  text-decoration: none;
+}
+
+/* Start Header */
+.header {
+    width: 100%;
+    background-color: var(--first-color);
+    display: flex;
+    align-items: center;
+}
+
+.container-header {
+    display: grid;
+    grid-template-columns: 120px minmax(auto, 1000px)200px;
+    background-color: var(--first-color);
+    height: 50px;
+    box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.logo {
+    grid-column: 1 / 2;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo img {
+    width: 100px;
+    padding-top: 6px;
+}
+
+.navbar {
+    grid-column: 2/3;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 0;
+}
+
+.navbar li {
+  list-style-type: none;
+  padding:5px 20px;
+  border: 1px solid transparent;
+}
+
+.navbar li a {
+  color: white;
+}
+
+.navbar li:hover {
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.right-header {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: white;
+}
+
+.find-location {
+  padding: 5px 10px;
+  color: white;
+}
+
+.find-location:hover {
+  box-sizing: border-box;
+  border: 1px solid white;
+  border-radius: 5px;
+}
+
+.profile-user {
+  color: white;
+}
+
+.fa-location-dot {
+  margin-right: 10px;
+}
+
+.fa-user {
+  font-size: larger;
+  margin-left: 10px;
+  padding: 4px;
+  border: 3px solid white;
+  border-radius: 50%;
+}
+/* End Header */
+/* Start Jumbotron */
+.jumbotron {
+  content: "";
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 745px;
+  z-index: -1;
+  background: #1b1b32;
+  background-image: linear-gradient(
+      115deg,
+      rgba(29, 29, 59, 0.8),
+      rgba(0, 0, 0, 0.7)
+    ),
+    url("../img/jumbotron1.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: top;
+  display: flex;
+  justify-content: center;
+}
+
+.container-jumbotron {
+  width: 1280px;
+  height: 100%;
+  margin: auto;
+  color: white;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+}
+
+.jumbotron__content {
+  background: rgba(29, 29, 59, 0.8);
+  text-align: right;
+  padding-right: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.button {
+  width: 200px;
+  height: 50px;
+  border-radius: 35px;
+  border: 0;
+}
+
+.jumbotron__content span {
+  display: block;
+  font-size: 55px;
+}
+
+.jumbotron__content p {
+  font-size: 20px;
+}
+
+.order-button {
+  margin-top: 10px;
+  font-family: "amazon-ember";
+  font-weight: bolder;
+  margin-right: 20px;
+  background-color: white;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.order-button:hover {
+  background-color: transparent;
+  border: 2px solid white;
+  color: white;
+  transition: 0.3s;
+}
+/* End Jumbotron */
+/* Start list menu */
+.list-menu {
+  width: 1280px;
+  display: grid;
+  margin: 0 auto 50px;
+  grid-template-columns: repeat(6, 1fr);
+}
+
+.list-menu__item {
+  border-right: 1px solid #25252546;
+}
+
+.list-menu__item a {
+  display: flex;
+  padding: 30px 0;
+  font-size: 24px;
+  font-weight: bolder;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: #252525;
+}
+
+.list-menu__item i {
+  font-size: 45px;
+  line-height: 2;
+}
+
+.list-menu__item:nth-child(6) {
+  border-right: none;
+}
+
+.list-menu__item a:hover{
+  transform: scale(1.1);
+  transition: 0.3s;
+}
+/* End List Menu */
+/* Start Promotions */
+.promotions {
+  display: grid;
+  grid-template-columns: 1fr 2.5fr;
+  width: 1280px;
+  margin: auto;
+}
+
+.promotions__deals {
+  padding-left: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-direction: column;
+}
+
+.promotions__deals-container p {
+  font-size: 22px;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.promotions__deals-container h3 {
+  margin-top: 2px;
+  font-size: 26px;
+  font-weight: bolder;
+}
+
+.offer-button {
+  background-color: #14734f;
+  color: white;
+  cursor: pointer;
+  font-weight: bolder;
+  margin-bottom: 40px;
+}
+
+.offer-button:hover {
+  background-color: transparent;
+  border: 3px solid #14734f;
+  color: #14734f;
+  transition: 0.3s;
+}
+.promotions__img img {
+  height: 90px;
+  width: 80px;
+  border: 1px solid #1319213d;
+  box-shadow: 0 2px 0 0 rgba(0, 0, 0, 0.2);
+}
+
+.promotions__img img:hover {
+  background-color: #ffc81e;
+}
+
+.promotions__product-container img{
+  width: 400px;
+}
+
+.promotions__product {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffc81e;
+}
+
+.promotions__product-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.product__description {
+  padding: 10px 40px;
+  background-color: #14734f;
+  color: white;
+  border-radius: 30px;
+}
+
+.product__title {
+  font-size: 30px;
+  font-weight: bolder;
+}
+/* End Promotions */
+/* Start Amazon-App */
+.amazon-app {
+  background-color: var(--first-color-dark);
+}
+
+.amazon-app__container {
+  width: 1280px;
+  margin: auto;
+  display: grid;
+  grid-template-columns: 1.3fr 2.5fr;
+}
+
+.amazon-app__phone img {
+  height: 515px;
+}
+
+.amazon-app__phone {
+  display: flex;
+  justify-content: center;
+}
+
+.amazon-app__description {
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+
+.amazon-app__description span {
+  font-size: 26px;
+  margin-bottom: 0;
+}
+
+.amazon-app__description h3 {
+  font-size: 30px;
+  margin: 2px 0;
+}
+
+.amazon-app__button {
+  margin-top: 30px;
+}
+
+.amazon-app__button a {
+  padding: 15px 25px;
+  background-color: white;
+  border-radius: 30px;
+  font-weight: bolder;
+  color: #0F1111;
+}
+
+.amazon-app__button a:nth-child(1) {
+  margin-right: 20px;
+  border: 2px solid white;
+}
+
+.amazon-app__button a:nth-child(2) {
+  background-color: var(--first-color-dark);
+  color: white;
+  border: 2px solid white;
+}
