@@ -54,7 +54,12 @@
         width: 100%;
     }
 
-    .amazon-app__container {
+    .doritos-section__container {
+        background-image: url("../img/DewDoritos-Tile3-Tablet-New.jpg");
+        width: 100%;
+    }
+
+    .amazon-app {
         width: 100%;
     }
 }

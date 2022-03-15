@@ -255,6 +255,22 @@ a {
   transition: 0.3s;
 }
 /* End List Menu */
+/* Doritos Section */
+.doritos-section {
+  width: 100%;
+  height: 480px;
+}
+
+.doritos-section__container {
+  background-image: url("../img/DewDoritos-Tile3-New.jpg");
+  background-position: center;
+  width: 1280px;
+  height: 480px;
+  margin: auto;
+  background-repeat: no-repeat;
+  display: grid;
+  grid-template-columns: 1.5fr 2fr;
+}
 /* Start Promotions */
 .promotions {
   display: grid;
@@ -341,11 +357,11 @@ a {
 /* Start Amazon-App */
 .amazon-app {
   background-color: var(--first-color-dark);
+  width: 1280px;
+  margin: auto;
 }
 
 .amazon-app__container {
-  width: 1280px;
-  margin: auto;
   display: grid;
   grid-template-columns: 1.3fr 2.5fr;
 }
@@ -398,4 +414,16 @@ a {
   background-color: var(--first-color-dark);
   color: white;
   border: 2px solid white;
+}
+
+/* Footer Style */
+.footer {
+  background-color: var(--first-color-dark);
+  width: 100%;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.footer span {
+  color: white;
 }
