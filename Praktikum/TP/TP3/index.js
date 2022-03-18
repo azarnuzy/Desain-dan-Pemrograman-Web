@@ -1,6 +1,7 @@
 const input = document.querySelector('.btn');
 let nama,
   tglLahir,
+  correctTglLahir,
   jnsKelamin,
   hobi = [],
   hobies,
@@ -11,52 +12,53 @@ let index = 1;
 const getData = () => {
   nama = document.querySelector('#name').value;
   tglLahir = document.querySelector('#tgl-lahir').value;
+  correctTglLahir = tglLahir.split('-').reverse().join('-');
   jnsKelaminAll = document.querySelectorAll('.jenis-kelamin');
   hobiAll = document.querySelectorAll('.hobi');
   agama = document.querySelector('#agama').value;
   pesan = document.querySelector('#pesan').value;
   for (let i = 0; i < jnsKelaminAll.length; i++) {
     if (jnsKelaminAll[i].checked) {
-      console.log(jnsKelaminAll[i].value);
       jnsKelamin = jnsKelaminAll[i].value;
     }
   }
 
   for (let i = 0; i < hobiAll.length; i++) {
     if (hobiAll[i].checked) {
-      hobi.push(hobiAll[i]);
+      console.log(hobiAll[i].value);
+      hobi.push(hobiAll[i].value);
     }
   }
-  hobies = hobi.toString();
+  hobies = hobi.join(', ');
 };
 
 const addRecord = () => {
-  const table = document.querySelector('.table-content');
-  const record = document.createElement('tr');
-  console.log(nama, tglLahir, jnsKelamin, hobies);
+  const table = document.querySelector('.table');
+  const record = document.createElement('tbody');
+  record.setAttribute('class', 'table-content');
   record.innerHTML = `
     <tr>
-      <td>Nama:</td>
+      <th scope="row">Nama:</th>
       <td>${nama}</td>
     </tr>
     <tr>
-      <td>Tanggal Lahir:</td>
-      <td>${tglLahir}</td>
+      <th scope="row">Tanggal Lahir:</th>
+      <td>${correctTglLahir}</td>
     </tr>
     <tr>
-      <td>Jenis Kelamin:</td>
+      <th scope="row">Jenis Kelamin:</th>
       <td>${jnsKelamin}</td>
     </tr>
     <tr>
-      <td>Hobi:</td>
+      <th scope="row">Hobi:</th>
       <td>${hobies}</td>
     </tr>
     <tr>
-      <td>Agama:</td>
+      <th scope="row">Agama:</th>
       <td>${agama}</td>
     </tr>
     <tr>
-      <td>Pesan:</td>
+      <th scope="row">Pesan:</th>
       <td>${pesan}</td>
     </tr>
   `;

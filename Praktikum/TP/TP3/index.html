@@ -49,7 +49,7 @@
               type="radio"
               name="flexRadioDefault"
               id="Laki-laki"
-              checked
+              value="Laki-laki"
             />
             <label class="form-check-label" for="Laki-laki"> Laki-laki </label>
           </div>
@@ -59,6 +59,7 @@
               type="radio"
               name="flexRadioDefault"
               id="perempuan"
+              value="Perempuan"
             />
             <label class="form-check-label" for="perempuan"> Perempuan </label>
           </div>
@@ -68,6 +69,7 @@
               type="radio"
               name="flexRadioDefault"
               id="otherJenisKelamin"
+              value="Other"
             />
             <label class="form-check-label" for="otherJenisKelamin">
               Other
@@ -77,22 +79,41 @@
         <label for="Hobi" class="form-label mb-0">Hobi</label>
         <div class="col-12 d-flex flex-row">
           <div class="form-check">
-            <input class="hobi" type="checkbox" value="ngoding" id="ngoding" />
+            <input
+              class="hobi"
+              name="ngoding"
+              type="checkbox"
+              value="Ngoding"
+              id="ngoding"
+            />
             <label class="form-check-label" for="ngoding"> Ngoding </label>
           </div>
           <div class="form-check ms-2">
-            <input class="hobi" type="checkbox" value="rebahan" id="rebahan" />
+            <input
+              class="hobi"
+              name=""
+              rebahan
+              type="checkbox"
+              value="Rebahan"
+              id="rebahan"
+            />
             <label class="form-check-label" for="rebahan"> Rebahan </label>
           </div>
           <div class="form-check ms-2">
-            <input class="hobi" type="checkbox" value="melamun" id="melamun" />
+            <input
+              class="hobi"
+              name="melamun"
+              type="checkbox"
+              value="Melamun"
+              id="melamun"
+            />
             <label class="form-check-label" for="melamun"> Melamun </label>
           </div>
           <div class="form-check ms-2">
             <input
               class="hobi"
               type="checkbox"
-              value="bacaBuku"
+              value="Baca Buku"
               id="bacaBuku"
             />
             <label class="form-check-label" for="bacaBuku"> Baca Buku </label>
@@ -101,7 +122,7 @@
             <input
               class="hobi"
               type="checkbox"
-              value="nontonYoutube"
+              value="Nonton Youtube"
               id="nontonYoutube"
             />
             <label class="form-check-label" for="nontonYoutube">
@@ -112,7 +133,7 @@
             <input
               class="hobi"
               type="checkbox"
-              value="dengerinLagu"
+              value="Dengerin Lagu"
               id="dengerinLagu"
             />
             <label class="form-check-label" for="dengerinLagu">
@@ -123,7 +144,7 @@
             <input
               class="hobi"
               type="checkbox"
-              value="otherHobi"
+              value="Other Hobi"
               id="otherHobi"
             />
             <label class="form-check-label" for="otherHobi"> other </label>
@@ -156,8 +177,8 @@
       <table class="table mt-5">
         <thead>
           <tr>
-            <th scope="col">Label</th>
-            <th scope="col">Value</th>
+            <th scope="col-4">Label</th>
+            <th scope="col-4">Value</th>
           </tr>
         </thead>
         <tbody class="table-content"></tbody>
